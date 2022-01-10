@@ -5,8 +5,8 @@
     text-decoration: none;
     color: black;
 }
+
 nav{
-    margin: 10px;
     display: flex;
     flex: 100%;
     background-color: rgb(231, 231, 231);
@@ -19,18 +19,64 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    margin: 10px;
     flex: 100%;
     align-items: center;
 }
 nav ul li{
-    font-size: 3em;
+    font-size: 2em;
     padding-right: 1em;
 }
 nav ul li:first-child{
     margin-right: auto;
-    font-size: 5em;
+    font-size: 4em;
 }
-.transfer{
-    margin-top: 1vw;
+nav ul li:nth-child(2){
+    margin-right: auto;
+}
+#hero{
+    background-image: url(Images/Truth\ is\ a\ lie.png);
+    background-color: white;
+    height: 90vh;
+    border-bottom: 2px solid black;
+}
+section{
+    display: flex;
+    flex: 100%;
+    flex-direction: row;
+}
+section ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 44vh;
+}
+section div{
+    background-color: gray;
+    width: 14vw;
+    height: 44vh;
+}
+section div h2{
+    margin: 20px;
+    font-size: 25px;
+}
+section h2:nth-child(2){
+    margin: 12px;
+    margin-top: 160px;
+    font-size: 2em;
+    font-weight: bold;
+    width: 10em;
+    font-family: cursive;
+}
+.box{
+    border: solid 4px gray;
+    margin: 20px;
+    width: 20vw;
+    height: 30vh;
+    font-family: 'Monoton', cursive;
+    font-size: 2em;
+}
+.box img{
+    width: 20vw;
+    height: 30vh;
 }
