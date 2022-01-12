@@ -82,6 +82,7 @@ section p{
     font-size: 2em;
     width: 10em;
     font-family: 'Monoton', cursive;
+    text-align: center;
 }
 .box{
     border: solid 4px gray;
@@ -105,12 +106,18 @@ footer{
 
 
 
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1800px){
     #hero{
-        object-fit: cover;
-        background-repeat: no-repeat;
-        height: 40vh;
-        width: 100%;
+        display: none;
+    }
+    nav ul li:first-child{
+        font-size: 2em;
+    }
+    section ul{
+        font-size: 0.8em;
+    }
+    section div{
+        background-size: 20vw;
     }
 }
 @media only screen and (max-width: 1400px) {
