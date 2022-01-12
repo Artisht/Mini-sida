@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     color: black;
+    box-sizing: border-box;
 }
 
 nav{
@@ -33,12 +34,19 @@ nav ul li:first-child{
 nav ul li:nth-child(2){
     margin-right: auto;
 }
+
 #hero{
-    background-image: url(Images/Truth\ is\ a\ lie.png);
     background-color: white;
     height: 90vh;
+    width: 95vw;
+    object-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
     border-bottom: 2px solid black;
+    margin-left: 40px;
+    margin-right: auto;
 }
+
 section{
     display: flex;
     flex: 100%;
@@ -50,23 +58,30 @@ section ul{
     flex-direction: row;
     overflow: auto;
     height: 44vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+section ul::-webkit-scrollbar {
+    display: none;
+  }
 section div{
+    display: flex;
+    flex: 16%;
+    width: 20vw;
     background-color: gray;
-    width: 14vw;
-    height: 44vh;
+    align-items: center;
+    justify-content: center;
 }
 section div h2{
     margin: 20px;
     font-size: 25px;
 }
-section h2:nth-child(2){
+section p{
     margin: 12px;
     margin-top: 160px;
     font-size: 2em;
-    font-weight: bold;
     width: 10em;
-    font-family: cursive;
+    font-family: 'Monoton', cursive;
 }
 .box{
     border: solid 4px gray;
@@ -79,4 +94,40 @@ section h2:nth-child(2){
 .box img{
     width: 20vw;
     height: 30vh;
+    object-fit: cover;
+}
+
+footer{
+    background-color: rgb(58, 58, 58);
+    height: 30vh;
+}
+
+
+
+
+@media only screen and (max-width: 1500px){
+    #hero{
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 40vh;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    section div{
+        display: none;
+    }
+    #hero{
+        display: none;
+    }
+    .box{
+        font-size: 1.5em;
+    }
+    nav ul li{
+        font-size: 1.5em;
+    }
+    nav ul li:first-child{
+        font-size: 2em;
+        margin-left: 1vw;
+    }
 }
