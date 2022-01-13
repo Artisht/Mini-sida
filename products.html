@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="myscripts.js"></script>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.jpg" />
     <script src="https://kit.fontawesome.com/2744413485.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>True Shop is the best shop</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">True Shop</a>
-                </li>
-                <li>
-                    <a href="products.html"> All produkts</a>
-                </li>
-                <li>
-                    <a href="#">The truly best</a>
-                </li>
-                <li>
-                    <a href="#">Our truth</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="topnav">
+            <a href="index.html">True Shop</a>
+            <div id="myLinks">
+              <a href="products.html">All products</a>
+              <a href="Best.html">The Truly Best</a>
+              <a href="Ourtruth.html">Our Truth</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </nav>
     </header>
-        
     <main>
         <section>
-            <ul id="product_row">
+            <ul class="product_row">
+                <h1>Jeans/Pants:</h1>
                 <li class="box">
                     <img src="Images/Black jeans w extra pockets (M).jpg" alt="Black jeans with extra pockets">
                     Black jeans (M)
@@ -51,6 +49,100 @@
                     Brown Jeans
                 </li>
             </ul>
+            <ul class="product_row">
+                <h1>Clockwork:</h1>
+                <li class="box">
+                    <img src="Images/A tissot watch.jpg" alt="A gold tissot watch">
+                    Tissot watch
+                </li>
+                <li class="box">
+                    <img src="Images/black rolex.jpg" alt="A black rolex">
+                    Rolex watch
+                </li>
+                <li class="box">
+                    <img src="Images/white omega.jpg" alt="A white omega watch">
+                    Omega Watch
+                </li>
+                <li class="box">
+                    <img src="Images/Smart watch.jpg" alt="Smart Watch">
+                    Smart Watch
+                </li>
+                <li class="box">
+                    <img src="Images/FWC .jpg" alt="FWC watch">
+                    FWC watch
+                </li>
+            </ul>
+            <ul class="product_row">
+                <h1>Shirts:</h1>
+                <li class="box">
+                    <img src="Images/blue shirt.jpg" alt="A blue shirt">
+                    Blue shirt
+                </li>
+                <li class="box">
+                    <img src="Images/White shirts.jpg" alt="A white shirt">
+                    White shirt
+                </li>
+                <li class="box">
+                    <img src="Images/HaBiBI Shirt.jpg" alt="A red shirt">
+                    Red shirt
+                </li>
+                <li class="box">
+                    <img src="Images/Orange shirt.jpg" alt="A orange shirt">
+                    Orange shirt
+                </li>
+                <li class="box">
+                    <img src="Images/Yellow shirt.jpg" alt="A yellow shirt">
+                    Yellow shirt
+                </li>
+            </ul>
+            <ul class="product_row">
+                <h1>Boxers:</h1>
+                <li class="box">
+                    <img src="Images/Red boxers.jpg" alt="Red boxers">
+                    Red boxers
+                </li>
+                <li class="box">
+                    <img src="Images/Black boxers.jpg" alt="Black boxers">
+                    Black boxers
+                </li>
+                <li class="box">
+                    <img src="Images/White boxers.jpg" alt="White boxers">
+                    White boxers
+                </li>
+                <li class="box">
+                    <img src="Images/Yellow boxers.jpg" alt="Yellow boxers">
+                    Yellow boxers
+                </li>
+                <li class="box">
+                    <img src="Images/Striped boxers.jpg" alt="Striped boxers">
+                    Striped boxers
+                </li>
+            </ul>
+            
         </section>
     </main>
+    <footer>
+        <ul class="Footer_support">
+            <li>Support</li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Delivery</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Returns & Refunds</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Help & Curstomer Service</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Gift Cards</a></li>
+        </ul>
+        <ul class="Footer_support">
+            <li>Company</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Work with us</a></li>
+            <li><a href="#">The next in line</a></li>
+            <li><a href="#">Trueshop membership</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://sv-se.facebook.com/" target="_blank"><i class="fab fa-facebook icon"></i></a></li>
+            <li><a href="https://twitter.com/?lang=sv" target="_blank"><i class="fab fa-twitter icon"></i></a></li>
+            <li><a href="https://accounts.snapchat.com/" target="_blank"><i class="fab fa-snapchat icon"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+        </ul>
+        <p>TrueShop© 2022</p>
+    </footer>
 </body>
+</html>
